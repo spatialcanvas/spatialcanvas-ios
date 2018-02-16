@@ -1,0 +1,11 @@
+framework module SpatialCanvas {
+  umbrella header "SpatialCanvas.h"
+
+  export *
+  module * { export * }
+}
+
+module SpatialCanvas.Swift {
+    header "SpatialCanvas-Swift.h"
+    requires objc
+}

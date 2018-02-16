@@ -1,0 +1,12 @@
+PODS:
+  - SpatialCanvas (0.5.3)
+
+DEPENDENCIES:
+  - SpatialCanvas (~> 0.5.3)
+
+SPEC CHECKSUMS:
+  SpatialCanvas: 3023f0593b06b1b2bee0a2bde891d9ee17c5240b
+
+PODFILE CHECKSUM: 43944f99b233744b8b4fbc1a081f4dd453248615
+
+COCOAPODS: 1.3.1
