@@ -1,27 +1,175 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A278a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14092" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14081.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Show Rooms View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <arscnView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="BrB-h1-WRS">
+                <viewController id="BV1-FR-VrT" customClass="ShowRoomsViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lQB-ct-jM6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </arscnView>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cij-qe-9Fh" customClass="VirtualObjectARView" customModule="Example" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </arscnView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IdI-ry-8t0">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Cij-qe-9Fh" firstAttribute="top" secondItem="jLN-EY-DEW" secondAttribute="top" id="LHh-Fu-dYz"/>
+                            <constraint firstItem="jLN-EY-DEW" firstAttribute="bottom" secondItem="IdI-ry-8t0" secondAttribute="bottom" id="QiI-XT-1wg"/>
+                            <constraint firstItem="IdI-ry-8t0" firstAttribute="top" secondItem="jLN-EY-DEW" secondAttribute="top" id="UWK-OM-dWw"/>
+                            <constraint firstItem="IdI-ry-8t0" firstAttribute="leading" secondItem="jLN-EY-DEW" secondAttribute="leading" id="Ua8-dB-p44"/>
+                            <constraint firstItem="jLN-EY-DEW" firstAttribute="trailing" secondItem="IdI-ry-8t0" secondAttribute="trailing" id="VvO-DX-X8K"/>
+                            <constraint firstItem="jLN-EY-DEW" firstAttribute="trailing" secondItem="Cij-qe-9Fh" secondAttribute="trailing" id="Y1x-6l-esk"/>
+                            <constraint firstItem="Cij-qe-9Fh" firstAttribute="leading" secondItem="jLN-EY-DEW" secondAttribute="leading" id="bmJ-ZR-i03"/>
+                            <constraint firstItem="jLN-EY-DEW" firstAttribute="bottom" secondItem="Cij-qe-9Fh" secondAttribute="bottom" id="kaP-da-APF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jLN-EY-DEW"/>
+                    </view>
                     <connections>
-                        <outlet property="sceneView" destination="BrB-h1-WRS" id="5nT-qQ-ynl"/>
+                        <outlet property="sceneView" destination="Cij-qe-9Fh" id="9R5-Wn-YSh"/>
+                        <segue destination="ppY-cy-WhQ" kind="presentation" identifier="createRoom" modalPresentationStyle="overCurrentContext" id="xgU-3c-ARC"/>
+                        <segue destination="e1j-Nh-gUw" kind="presentation" identifier="showMain" modalPresentationStyle="overCurrentContext" id="Zc4-Xy-mDT"/>
+                        <segue destination="9ON-EZ-viA" kind="presentation" identifier="scanMasterAnchor" modalPresentationStyle="overCurrentContext" id="VcV-xg-ehf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="70" y="114"/>
+        </scene>
+        <!--Create Room View Controller-->
+        <scene sceneID="3YC-ka-m0y">
+            <objects>
+                <viewController id="ppY-cy-WhQ" customClass="CreateRoomViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="w9I-Ul-ZH6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scanning room" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L7k-qI-41M" customClass="MessageLabel" customModule="Example" customModuleProvider="target">
+                                <rect key="frame" x="130" y="133" width="115" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="L7k-qI-41M" firstAttribute="centerX" secondItem="ICF-H2-br9" secondAttribute="centerX" id="UBU-2E-lhi"/>
+                            <constraint firstItem="L7k-qI-41M" firstAttribute="top" secondItem="ICF-H2-br9" secondAttribute="top" constant="113" id="ygv-BN-gNN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ICF-H2-br9"/>
+                    </view>
+                    <connections>
+                        <outlet property="messageLabel" destination="L7k-qI-41M" id="K7d-Xs-lEC"/>
+                        <segue destination="9ON-EZ-viA" kind="presentation" identifier="scanMasterAnchor" modalPresentationStyle="overCurrentContext" id="Wef-by-BmR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Xq-dW-N6G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="860" y="457"/>
+        </scene>
+        <!--Scan Master Anchor View Controller-->
+        <scene sceneID="lrz-sm-oK5">
+            <objects>
+                <viewController id="9ON-EZ-viA" customClass="ScanMasterAnchorViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yOw-25-4cx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PUC-J4-CyP" customClass="Button" customModule="Example" customModuleProvider="target">
+                                <rect key="frame" x="112" y="572" width="150" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="Hxi-Hc-XFp"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="fiW-zW-qxK"/>
+                                </constraints>
+                                <state key="normal" title="Scan">
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="scanButtonDidTouch:" destination="9ON-EZ-viA" eventType="touchUpInside" id="gfF-3I-WWG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ILO-OD-jmG" firstAttribute="bottom" secondItem="PUC-J4-CyP" secondAttribute="bottom" constant="45" id="U4f-oh-Oq3"/>
+                            <constraint firstItem="PUC-J4-CyP" firstAttribute="centerX" secondItem="ILO-OD-jmG" secondAttribute="centerX" id="Unm-Tj-JKa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ILO-OD-jmG"/>
+                    </view>
+                    <connections>
+                        <outlet property="scanButton" destination="PUC-J4-CyP" id="1OM-xo-NBS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W8q-Fz-PZx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1644" y="-208"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="aAd-bf-I0q">
+            <objects>
+                <viewController id="e1j-Nh-gUw" customClass="MainViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="znL-Jj-SkH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cOC-9e-jd0" customClass="Button" customModule="Example" customModuleProvider="target">
+                                <rect key="frame" x="109.5" y="577" width="155" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="Mio-JP-DPf"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="155" id="uyt-96-fzQ"/>
+                                </constraints>
+                                <state key="normal" title="Place"/>
+                                <connections>
+                                    <action selector="placeButtonDidTouch:" destination="e1j-Nh-gUw" eventType="touchUpInside" id="KBQ-a4-hGy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AdV-zO-NRN" customClass="Button" customModule="Example" customModuleProvider="target">
+                                <rect key="frame" x="16" y="35" width="90" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="LhP-pS-uTw"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="Vn8-zT-rOA"/>
+                                </constraints>
+                                <state key="normal" title="Delete Room">
+                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="deleteButtonDidTouch:" destination="e1j-Nh-gUw" eventType="touchUpInside" id="RmA-nK-0jK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="AdV-zO-NRN" firstAttribute="leading" secondItem="tbu-cm-u2I" secondAttribute="leading" constant="16" id="LMB-p4-axa"/>
+                            <constraint firstItem="tbu-cm-u2I" firstAttribute="bottom" secondItem="cOC-9e-jd0" secondAttribute="bottom" constant="40" id="jKH-sg-gUq"/>
+                            <constraint firstItem="cOC-9e-jd0" firstAttribute="centerX" secondItem="tbu-cm-u2I" secondAttribute="centerX" id="kUI-eX-7Kr"/>
+                            <constraint firstItem="AdV-zO-NRN" firstAttribute="top" secondItem="tbu-cm-u2I" secondAttribute="top" constant="15" id="pwQ-uu-4s3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tbu-cm-u2I"/>
+                    </view>
+                    <connections>
+                        <outlet property="deleteButton" destination="AdV-zO-NRN" id="SNN-n7-4bN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k8U-I3-Ma5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="70" y="958"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Wef-by-BmR"/>
+    </inferredMetricsTieBreakers>
 </document>

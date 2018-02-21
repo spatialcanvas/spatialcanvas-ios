@@ -7,9 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46117846203E16D800975997 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46117845203E16D800975997 /* MainViewController.swift */; };
+		46334B90203E179D0073F695 /* ShowRoomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46334B8D203E179C0073F695 /* ShowRoomsViewController.swift */; };
+		46334B91203E179D0073F695 /* CreateRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46334B8E203E179C0073F695 /* CreateRoomViewController.swift */; };
+		46334B92203E179D0073F695 /* ScanMasterAnchorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46334B8F203E179C0073F695 /* ScanMasterAnchorViewController.swift */; };
+		46334B9D203E17DE0073F695 /* MessageLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46334B94203E17DE0073F695 /* MessageLabel.swift */; };
+		46334B9E203E17DE0073F695 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46334B95203E17DE0073F695 /* Extensions.swift */; };
+		46334B9F203E17DE0073F695 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46334B96203E17DE0073F695 /* ImageDownloader.swift */; };
+		46334BA0203E17DE0073F695 /* PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46334B97203E17DE0073F695 /* PopupView.swift */; };
+		46334BA1203E17DE0073F695 /* FocusSquareSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46334B99203E17DE0073F695 /* FocusSquareSegment.swift */; };
+		46334BA2203E17DE0073F695 /* VirtualObjectARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46334B9A203E17DE0073F695 /* VirtualObjectARView.swift */; };
+		46334BA3203E17DE0073F695 /* FocusSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46334B9B203E17DE0073F695 /* FocusSquare.swift */; };
+		46334BA4203E17DE0073F695 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46334B9C203E17DE0073F695 /* Button.swift */; };
 		4688F2B420373CDF008314C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4688F2B320373CDF008314C4 /* AppDelegate.swift */; };
 		4688F2B620373CDF008314C4 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 4688F2B520373CDF008314C4 /* art.scnassets */; };
-		4688F2B820373CDF008314C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4688F2B720373CDF008314C4 /* ViewController.swift */; };
 		4688F2BB20373CDF008314C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4688F2B920373CDF008314C4 /* Main.storyboard */; };
 		4688F2BD20373CE0008314C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4688F2BC20373CE0008314C4 /* Assets.xcassets */; };
 		4688F2C020373CE0008314C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4688F2BE20373CE0008314C4 /* LaunchScreen.storyboard */; };
@@ -17,10 +28,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		46117845203E16D800975997 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		46334B8D203E179C0073F695 /* ShowRoomsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowRoomsViewController.swift; sourceTree = "<group>"; };
+		46334B8E203E179C0073F695 /* CreateRoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateRoomViewController.swift; sourceTree = "<group>"; };
+		46334B8F203E179C0073F695 /* ScanMasterAnchorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanMasterAnchorViewController.swift; sourceTree = "<group>"; };
+		46334B94203E17DE0073F695 /* MessageLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageLabel.swift; sourceTree = "<group>"; };
+		46334B95203E17DE0073F695 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		46334B96203E17DE0073F695 /* ImageDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		46334B97203E17DE0073F695 /* PopupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupView.swift; sourceTree = "<group>"; };
+		46334B99203E17DE0073F695 /* FocusSquareSegment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusSquareSegment.swift; sourceTree = "<group>"; };
+		46334B9A203E17DE0073F695 /* VirtualObjectARView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VirtualObjectARView.swift; sourceTree = "<group>"; };
+		46334B9B203E17DE0073F695 /* FocusSquare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusSquare.swift; sourceTree = "<group>"; };
+		46334B9C203E17DE0073F695 /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		4688F2B020373CDF008314C4 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4688F2B320373CDF008314C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4688F2B520373CDF008314C4 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
-		4688F2B720373CDF008314C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4688F2BA20373CDF008314C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4688F2BC20373CE0008314C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4688F2BF20373CE0008314C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +73,39 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		46334B8C203E179C0073F695 /* RoomCreation */ = {
+			isa = PBXGroup;
+			children = (
+				46334B8D203E179C0073F695 /* ShowRoomsViewController.swift */,
+				46334B8E203E179C0073F695 /* CreateRoomViewController.swift */,
+				46334B8F203E179C0073F695 /* ScanMasterAnchorViewController.swift */,
+			);
+			path = RoomCreation;
+			sourceTree = "<group>";
+		};
+		46334B93203E17DE0073F695 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				46334B94203E17DE0073F695 /* MessageLabel.swift */,
+				46334B95203E17DE0073F695 /* Extensions.swift */,
+				46334B96203E17DE0073F695 /* ImageDownloader.swift */,
+				46334B97203E17DE0073F695 /* PopupView.swift */,
+				46334B98203E17DE0073F695 /* FocusSquare */,
+				46334B9C203E17DE0073F695 /* Button.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		46334B98203E17DE0073F695 /* FocusSquare */ = {
+			isa = PBXGroup;
+			children = (
+				46334B99203E17DE0073F695 /* FocusSquareSegment.swift */,
+				46334B9A203E17DE0073F695 /* VirtualObjectARView.swift */,
+				46334B9B203E17DE0073F695 /* FocusSquare.swift */,
+			);
+			path = FocusSquare;
+			sourceTree = "<group>";
+		};
 		4688F2A720373CDE008314C4 = {
 			isa = PBXGroup;
 			children = (
@@ -72,9 +127,11 @@
 		4688F2B220373CDF008314C4 /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				46334B93203E17DE0073F695 /* Utils */,
+				46334B8C203E179C0073F695 /* RoomCreation */,
+				46117845203E16D800975997 /* MainViewController.swift */,
 				4688F2B320373CDF008314C4 /* AppDelegate.swift */,
 				4688F2B520373CDF008314C4 /* art.scnassets */,
-				4688F2B720373CDF008314C4 /* ViewController.swift */,
 				4688F2B920373CDF008314C4 /* Main.storyboard */,
 				4688F2BC20373CE0008314C4 /* Assets.xcassets */,
 				4688F2BE20373CE0008314C4 /* LaunchScreen.storyboard */,
@@ -221,8 +278,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4688F2B820373CDF008314C4 /* ViewController.swift in Sources */,
+				46334BA0203E17DE0073F695 /* PopupView.swift in Sources */,
+				46334BA3203E17DE0073F695 /* FocusSquare.swift in Sources */,
+				46334B90203E179D0073F695 /* ShowRoomsViewController.swift in Sources */,
+				46334BA2203E17DE0073F695 /* VirtualObjectARView.swift in Sources */,
+				46334B92203E179D0073F695 /* ScanMasterAnchorViewController.swift in Sources */,
+				46334B9F203E17DE0073F695 /* ImageDownloader.swift in Sources */,
 				4688F2B420373CDF008314C4 /* AppDelegate.swift in Sources */,
+				46334BA1203E17DE0073F695 /* FocusSquareSegment.swift in Sources */,
+				46334B91203E179D0073F695 /* CreateRoomViewController.swift in Sources */,
+				46334B9D203E17DE0073F695 /* MessageLabel.swift in Sources */,
+				46117846203E16D800975997 /* MainViewController.swift in Sources */,
+				46334BA4203E17DE0073F695 /* Button.swift in Sources */,
+				46334B9E203E17DE0073F695 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

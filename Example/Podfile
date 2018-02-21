@@ -1,11 +1,8 @@
-source 'https://github.com/CocoaPods/Specs.git'
-source 'git@github.com:spatialcanvas/cocoapods-specs.git' # TODO: this should be removed when pushing the podspec to cocoapods
-
 platform :ios, '11.3'
 
 target 'Example' do
 
   use_frameworks!
-  pod 'SpatialCanvas', '~> 0.5.3'
+  pod 'SpatialCanvas', '~> 0.5'
 
 end
