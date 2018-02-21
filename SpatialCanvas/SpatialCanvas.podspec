@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
     s.name              = "SpatialCanvas"
-    s.version           = "0.5.3"
-    s.summary           = "AR Persistance"
+    s.version           = "0.5.4"
+    s.summary           = "Augmented Reality Persistence"
     s.homepage          = "https://github.com/spatialcanvas/spatialcanvas-ios"
     s.author            = { "Victor Mateevitsi" => "victor@spatialcanvas.com" }
     s.license           = { :type => "Commercial", :file => "LICENSE" }

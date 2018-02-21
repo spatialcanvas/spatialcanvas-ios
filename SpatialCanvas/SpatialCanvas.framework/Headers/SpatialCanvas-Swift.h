@@ -213,12 +213,6 @@ SWIFT_CLASS("_TtC13SpatialCanvas20SpatialCanvasScanner")
 
 SWIFT_CLASS("_TtC13SpatialCanvas16MasterAnchorScan")
 @interface MasterAnchorScan : SpatialCanvasScanner
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC13SpatialCanvas18MasterAnchorScan2D")
-@interface MasterAnchorScan2D : SpatialCanvasScanner
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 @end
