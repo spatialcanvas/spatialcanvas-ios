@@ -24,7 +24,7 @@ In your application Info.plist, add the following property:
 
 ## Documentation
 
-Check the full documentation [here](docs.spatialcanvas.com).
+Check the full documentation [here](http://docs.spatialcanvas.com).
 
 ## Example
 
