@@ -12,11 +12,10 @@ script:
   - |
     xcodebuild \
     -workspace Example.xcworkspace \
-    -scheme AllUnitTests_iOS \
+    -scheme Example \
     -sdk iphonesimulator \
     -destination 'platform=iOS Simulator,name=iPhone 8' \
     build \
-    test \
     ONLY_ACTIVE_ARCH=YES \
     CODE_SIGNING_REQUIRED=NO \
     | xcpretty
