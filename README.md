@@ -37,3 +37,6 @@ pod repo update
 pod install
 open Example.xcworkspace
 ```
+
+## License
+The contents of this repository is licensed under the [Apache License, version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
