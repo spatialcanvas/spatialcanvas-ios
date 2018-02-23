@@ -1,4 +1,4 @@
-# SpatialCanvas
+# SpatialCanvas [![Build Status](https://travis-ci.org/spatialcanvas/spatialcanvas-ios.svg?branch=master)](https://travis-ci.org/spatialcanvas/spatialcanvas-ios)
 
 SpatialCanvas is an iOS SDK meant to enhance your application by providing a persistent augmented reality experience.
 
