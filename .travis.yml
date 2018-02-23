@@ -11,7 +11,7 @@ before_install:
 script:
   - |
     xcodebuild \
-    -workspaceExample.xcworkspace \
+    -workspace Example.xcworkspace \
     -scheme AllUnitTests_iOS \
     -sdk iphonesimulator \
     -destination 'platform=iOS Simulator,name=iPhone 8' \
