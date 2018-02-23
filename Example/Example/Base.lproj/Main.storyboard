@@ -95,7 +95,7 @@
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="Hxi-Hc-XFp"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="fiW-zW-qxK"/>
                                 </constraints>
-                                <state key="normal" title="Scan">
+                                <state key="normal" title="Set Anchor">
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
