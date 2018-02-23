@@ -12,12 +12,12 @@ script:
   - |
     xcodebuild \
     -workspace Example.xcworkspace \
-    -scheme Example \
     -sdk iphonesimulator \
     -destination 'platform=iOS Simulator,name=iPhone 8' \
     build \
     ONLY_ACTIVE_ARCH=YES \
     CODE_SIGNING_REQUIRED=NO \
+    -list \
     | xcpretty
 
 branches:
